@@ -1,0 +1,357 @@
+2021-01-17 13:22:40.465  INFO 8924 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 8924 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:22:40.471  INFO 8924 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:22:41.715  WARN 8924 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:22:41.727  INFO 8924 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:22:41.867  WARN 8924 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:22:41.888  INFO 8924 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:22:41.921  INFO 8924 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:22:41.931  INFO 8924 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:22:41.931  INFO 8924 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:22:42.085  INFO 8924 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:22:42.433  INFO 8924 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:22:42.538  INFO 8924 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:22:42.539  INFO 8924 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:22:42.542  INFO 8924 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:22:45.117  INFO 8924 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - d3bc8ddb-5128-4178-a751-14596cbc48a0 this
+]
+
+2021-01-17 13:22:45.135  INFO 8924 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:22:45.212  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:22:45.558  INFO 8924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:22:45.586  INFO 8924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:22:45.617  INFO 8924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:22:45.729  INFO 8924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:22:45.827  INFO 8924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:22:46.221  INFO 8924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:22:46.931  INFO 8924 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:22:46.938  INFO 8924 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:22:46.944  INFO 8924 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:22:46.963  INFO 8924 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:22:47.128  INFO 8924 --- [RMI TCP Connection(4)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:22:47.296  INFO 8924 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.079 seconds (JVM running for 7.804)
+2021-01-17 13:26:12.065  INFO 8924 --- [RMI TCP Connection(14)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:26:12.415  INFO 8924 --- [RMI TCP Connection(14)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:26:12.513  INFO 8924 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:26:12.528  INFO 8924 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:26:19.572  INFO 13932 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 13932 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:26:19.575  INFO 13932 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:26:20.788  WARN 13932 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:26:20.804  INFO 13932 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:26:20.964  WARN 13932 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:26:20.992  INFO 13932 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:26:21.031  INFO 13932 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:26:21.042  INFO 13932 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:26:21.046  INFO 13932 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:26:21.228  INFO 13932 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:26:21.568  INFO 13932 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:26:21.684  INFO 13932 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:26:21.685  INFO 13932 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:26:21.688  INFO 13932 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:26:24.734  INFO 13932 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - c7446273-7530-448e-af27-90a564b2b805 this
+]
+
+2021-01-17 13:26:24.753  INFO 13932 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:26:24.839  INFO 13932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:26:25.006  INFO 13932 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.125]:5701 [dev] [3.12.2] processors=4, physical.memory.total=15.9G, physical.memory.free=8.0G, swap.space.total=0, swap.space.free=0, heap.memory.used=35.1M, heap.memory.free=58.9M, heap.memory.total=94.0M, heap.memory.max=4.0G, heap.memory.used/total=37.30%, heap.memory.used/max=0.86%, minor.gc.count=0, minor.gc.time=0ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=100.00%, load.systemAverage=n/a thread.count=49, thread.peakCount=49, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-01-17 13:26:25.133  INFO 13932 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:26:25.171  INFO 13932 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:26:25.217  INFO 13932 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:26:25.387  INFO 13932 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:26:25.482  INFO 13932 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:26:25.813  INFO 13932 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:26:26.490  INFO 13932 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:26:26.495  INFO 13932 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:26:26.500  INFO 13932 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:26:26.523  INFO 13932 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:26:26.778  INFO 13932 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.461 seconds (JVM running for 8.017)
+2021-01-17 13:26:28.871  INFO 13932 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:27:53.565  INFO 13932 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:27:53.576  INFO 13932 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:27:53.607  INFO 13932 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:27:53.626  INFO 13932 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:28:00.519  INFO 17332 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 17332 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:28:00.521  INFO 17332 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:28:01.694  WARN 17332 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:28:01.707  INFO 17332 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:28:01.849  WARN 17332 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:28:01.868  INFO 17332 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:28:01.913  INFO 17332 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:28:01.925  INFO 17332 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:28:01.927  INFO 17332 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:28:02.064  INFO 17332 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:28:02.443  INFO 17332 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:28:02.564  INFO 17332 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:28:02.565  INFO 17332 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:28:02.570  INFO 17332 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:28:05.186  INFO 17332 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - 05f9d378-79dd-4386-aee5-767753be034b this
+]
+
+2021-01-17 13:28:05.206  INFO 17332 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:28:05.279  INFO 17332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:28:05.550  INFO 17332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:28:05.579  INFO 17332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:28:05.613  INFO 17332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:28:05.732  INFO 17332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:28:05.833  INFO 17332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:28:06.167  INFO 17332 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:28:06.597  INFO 17332 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:28:06.937  INFO 17332 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:28:06.942  INFO 17332 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:28:06.947  INFO 17332 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:28:06.963  INFO 17332 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:28:06.987  INFO 17332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:28:07.002  INFO 17332 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:28:07.024  INFO 17332 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:28:07.151  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_1
+2021-01-17 13:28:07.161  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingDELETE_1
+2021-01-17 13:28:07.164  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_2
+2021-01-17 13:28:07.166  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_3
+2021-01-17 13:28:07.168  INFO 17332 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:28:07.170  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_4
+2021-01-17 13:28:07.173  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_5
+2021-01-17 13:28:07.176  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_6
+2021-01-17 13:28:07.181  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_7
+2021-01-17 13:28:07.188  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_8
+2021-01-17 13:28:07.191  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_9
+2021-01-17 13:28:07.194  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_10
+2021-01-17 13:28:07.197  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_11
+2021-01-17 13:28:07.200  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_12
+2021-01-17 13:28:07.204  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_13
+2021-01-17 13:28:07.206  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_14
+2021-01-17 13:28:07.209  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_15
+2021-01-17 13:28:07.215  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_16
+2021-01-17 13:28:07.218  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_17
+2021-01-17 13:28:07.221  INFO 17332 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: handleUsingGET_18
+2021-01-17 13:28:07.296  INFO 17332 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.054 seconds (JVM running for 7.525)
+2021-01-17 13:32:37.785  INFO 17332 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:32:37.789  INFO 17332 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:32:37.795  INFO 17332 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:32:37.799  INFO 17332 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:32:43.601  INFO 7236 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 7236 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:32:43.603  INFO 7236 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:32:44.711  WARN 7236 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:32:44.722  INFO 7236 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:32:44.861  WARN 7236 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:32:44.881  INFO 7236 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:32:44.915  INFO 7236 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:32:44.937  INFO 7236 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:32:44.937  INFO 7236 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:32:45.084  INFO 7236 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:32:45.424  INFO 7236 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:32:45.534  INFO 7236 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:32:45.535  INFO 7236 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:32:45.538  INFO 7236 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:32:48.043  INFO 7236 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - e7cf473b-62c1-411f-8681-4de7be8617df this
+]
+
+2021-01-17 13:32:48.062  INFO 7236 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:32:48.133  INFO 7236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:32:48.375  INFO 7236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:32:48.403  INFO 7236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:32:48.436  INFO 7236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:32:48.538  INFO 7236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:32:48.638  INFO 7236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:32:48.991  INFO 7236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:32:49.496  INFO 7236 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:32:49.811  INFO 7236 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:32:49.816  INFO 7236 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:32:49.821  INFO 7236 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:32:49.839  INFO 7236 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:32:49.866  INFO 7236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:32:49.881  INFO 7236 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:32:49.903  INFO 7236 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:32:49.984  INFO 7236 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 6.619 seconds (JVM running for 7.129)
+2021-01-17 13:32:52.149  INFO 7236 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:35:02.379  INFO 7236 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:35:02.383  INFO 7236 --- [RMI TCP Connection(13)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:35:02.389  INFO 7236 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:35:02.395  INFO 7236 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:35:08.748  INFO 7132 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 7132 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:35:08.749  INFO 7132 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:35:09.874  WARN 7132 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:35:09.886  INFO 7132 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:35:10.035  WARN 7132 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:35:10.058  INFO 7132 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:35:10.095  INFO 7132 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:35:10.119  INFO 7132 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:35:10.119  INFO 7132 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:35:10.270  INFO 7132 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:35:10.593  INFO 7132 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:35:10.703  INFO 7132 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:35:10.704  INFO 7132 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:35:10.707  INFO 7132 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:35:13.300  INFO 7132 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - 1ef5a15c-7941-40cf-bb13-02d02cbe23de this
+]
+
+2021-01-17 13:35:13.318  INFO 7132 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:35:13.394  INFO 7132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:35:13.650  INFO 7132 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:35:13.679  INFO 7132 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:35:13.712  INFO 7132 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:35:13.862  INFO 7132 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:35:13.960  INFO 7132 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:35:14.312  INFO 7132 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:35:14.867  INFO 7132 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:35:15.176  INFO 7132 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:35:15.182  INFO 7132 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:35:15.187  INFO 7132 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:35:15.203  INFO 7132 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:35:15.227  INFO 7132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:35:15.240  INFO 7132 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:35:15.262  INFO 7132 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:35:15.345  INFO 7132 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 6.828 seconds (JVM running for 7.316)
+2021-01-17 13:35:17.338  INFO 7132 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:36:16.106  INFO 7132 --- [RMI TCP Connection(7)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:36:16.112  INFO 7132 --- [RMI TCP Connection(7)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:36:16.118  INFO 7132 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:36:16.124  INFO 7132 --- [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:36:22.397  INFO 10684 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 10684 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:36:22.399  INFO 10684 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:36:23.752  WARN 10684 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:36:23.767  INFO 10684 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:36:23.955  WARN 10684 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:36:23.980  INFO 10684 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:36:24.020  INFO 10684 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:36:24.045  INFO 10684 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:36:24.045  INFO 10684 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:36:24.201  INFO 10684 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:36:24.540  INFO 10684 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:36:24.645  INFO 10684 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:36:24.646  INFO 10684 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:36:24.649  INFO 10684 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:36:27.406  INFO 10684 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - 08592f46-b573-4c9e-b458-9437c4266bb0 this
+]
+
+2021-01-17 13:36:27.426  INFO 10684 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:36:27.496  INFO 10684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:36:27.731  INFO 10684 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:36:27.764  INFO 10684 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:36:27.797  INFO 10684 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:36:27.913  INFO 10684 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:36:28.020  INFO 10684 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:36:28.377  INFO 10684 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:36:28.890  INFO 10684 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:36:29.334  INFO 10684 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:36:29.339  INFO 10684 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:36:29.345  INFO 10684 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:36:29.361  INFO 10684 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:36:29.389  INFO 10684 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:36:29.407  INFO 10684 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:36:29.434  INFO 10684 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:36:29.472  INFO 10684 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:36:29.540  INFO 10684 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.378 seconds (JVM running for 7.973)
+2021-01-17 13:39:09.512  INFO 10684 --- [RMI TCP Connection(11)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:39:09.516  INFO 10684 --- [RMI TCP Connection(11)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:39:09.523  INFO 10684 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:39:09.529  INFO 10684 --- [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:39:15.191  INFO 14100 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 14100 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:39:15.193  INFO 14100 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:39:16.365  WARN 14100 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:39:16.378  INFO 14100 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:39:16.522  WARN 14100 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:39:16.558  INFO 14100 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:39:16.595  INFO 14100 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:39:16.605  INFO 14100 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:39:16.610  INFO 14100 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:39:16.779  INFO 14100 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:39:17.188  INFO 14100 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:39:17.346  INFO 14100 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:39:17.347  INFO 14100 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:39:17.351  INFO 14100 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:39:20.080  INFO 14100 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - 5b008dbc-1958-4b59-a080-c8fa4cb4b4e8 this
+]
+
+2021-01-17 13:39:20.099  INFO 14100 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:39:20.178  INFO 14100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:39:20.419  INFO 14100 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:39:20.447  INFO 14100 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:39:20.480  INFO 14100 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:39:20.612  INFO 14100 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:39:20.712  INFO 14100 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:39:21.071  INFO 14100 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:39:21.544  INFO 14100 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:39:21.876  INFO 14100 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:39:21.882  INFO 14100 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:39:21.887  INFO 14100 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:39:21.904  INFO 14100 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:39:21.929  INFO 14100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:39:21.943  INFO 14100 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:39:21.966  INFO 14100 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:39:22.061  INFO 14100 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.118 seconds (JVM running for 7.663)
+2021-01-17 13:39:22.065  INFO 14100 --- [XNIO-1 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 13:42:47.949  INFO 14100 --- [RMI TCP Connection(12)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 13:42:47.953  INFO 14100 --- [RMI TCP Connection(12)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 13:42:47.962  INFO 14100 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 13:42:47.969  INFO 14100 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-01-17 13:44:39.437  INFO 18988 --- [main] c.r.springweb.ProductrestapiApplication  : Starting ProductrestapiApplication using Java 15.0.1 on RameshRajDesktop with PID 18988 (C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi\target\classes started by RaxyR in C:\Users\RaxyR\Documents\workspace-spring-tool-suite-4-4.9.0.RELEASE\productrestapi)
+2021-01-17 13:44:39.439  INFO 18988 --- [main] c.r.springweb.ProductrestapiApplication  : No active profile set, falling back to default profiles: default
+2021-01-17 13:44:40.605  WARN 18988 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-01-17 13:44:40.616  INFO 18988 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-01-17 13:44:40.752  WARN 18988 --- [main] c.h.instance.HazelcastInstanceFactory    : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2021-01-17 13:44:40.773  INFO 18988 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Prefer IPv4 stack is true, prefer IPv6 addresses is false
+2021-01-17 13:44:40.807  INFO 18988 --- [main] com.hazelcast.instance.AddressPicker     : [LOCAL] [dev] [3.12.2] Picked [192.168.1.125]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+2021-01-17 13:44:40.817  INFO 18988 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Hazelcast 3.12.2 (20190802 - e34b163) starting at [192.168.1.125]:5701
+2021-01-17 13:44:40.817  INFO 18988 --- [main] com.hazelcast.system                     : [192.168.1.125]:5701 [dev] [3.12.2] Copyright (c) 2008-2019, Hazelcast, Inc. All Rights Reserved.
+2021-01-17 13:44:40.986  INFO 18988 --- [main] c.h.s.i.o.impl.BackpressureRegulator     : [192.168.1.125]:5701 [dev] [3.12.2] Backpressure is disabled
+2021-01-17 13:44:41.367  INFO 18988 --- [main] com.hazelcast.instance.Node              : [192.168.1.125]:5701 [dev] [3.12.2] Creating MulticastJoiner
+2021-01-17 13:44:41.482  INFO 18988 --- [main] c.h.s.i.o.impl.OperationExecutorImpl     : [192.168.1.125]:5701 [dev] [3.12.2] Starting 4 partition threads and 3 generic threads (1 dedicated for priority tasks)
+2021-01-17 13:44:41.483  INFO 18988 --- [main] c.h.internal.diagnostics.Diagnostics     : [192.168.1.125]:5701 [dev] [3.12.2] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2021-01-17 13:44:41.487  INFO 18988 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTING
+2021-01-17 13:44:44.381  INFO 18988 --- [main] c.h.internal.cluster.ClusterService      : [192.168.1.125]:5701 [dev] [3.12.2] 
+
+Members {size:1, ver:1} [
+	Member [192.168.1.125]:5701 - f9636353-d1be-4044-9153-3b0bee49379b this
+]
+
+2021-01-17 13:44:44.449  INFO 18988 --- [main] com.hazelcast.core.LifecycleService      : [192.168.1.125]:5701 [dev] [3.12.2] [192.168.1.125]:5701 is STARTED
+2021-01-17 13:44:44.541  INFO 18988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-17 13:44:44.770  INFO 18988 --- [hz.hazel-instance.HealthMonitor] c.h.internal.diagnostics.HealthMonitor   : [192.168.1.125]:5701 [dev] [3.12.2] processors=4, physical.memory.total=15.9G, physical.memory.free=7.7G, swap.space.total=0, swap.space.free=0, heap.memory.used=51.0M, heap.memory.free=37.0M, heap.memory.total=88.0M, heap.memory.max=4.0G, heap.memory.used/total=57.92%, heap.memory.used/max=1.25%, minor.gc.count=0, minor.gc.time=0ms, major.gc.count=0, major.gc.time=0ms, load.process=0.00%, load.system=100.00%, load.systemAverage=n/a thread.count=49, thread.peakCount=49, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=1, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+2021-01-17 13:44:44.864  INFO 18988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-17 13:44:44.894  INFO 18988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-17 13:44:44.930  INFO 18988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-01-17 13:44:45.052  INFO 18988 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-17 13:44:45.227  INFO 18988 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-17 13:44:45.741  INFO 18988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-17 13:44:46.405  INFO 18988 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-17 13:44:46.875  INFO 18988 --- [main] io.undertow                              : starting server: Undertow - 2.2.3.Final
+2021-01-17 13:44:46.887  INFO 18988 --- [main] org.xnio                                 : XNIO version 3.8.0.Final
+2021-01-17 13:44:46.899  INFO 18988 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.0.Final
+2021-01-17 13:44:46.929  INFO 18988 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2021-01-17 13:44:46.962  INFO 18988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-17 13:44:46.983  INFO 18988 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-17 13:44:47.017  INFO 18988 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-17 13:44:47.181  INFO 18988 --- [main] c.r.springweb.ProductrestapiApplication  : Started ProductrestapiApplication in 7.958 seconds (JVM running for 8.454)
+2021-01-17 13:44:48.168  INFO 18988 --- [RMI TCP Connection(3)-127.0.0.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-17 17:43:09.752  INFO 18988 --- [RMI TCP Connection(246)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.2.3.Final
+2021-01-17 17:43:09.771  INFO 18988 --- [RMI TCP Connection(246)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-01-17 17:43:09.779  INFO 18988 --- [RMI TCP Connection(246)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-01-17 17:43:09.783  INFO 18988 --- [RMI TCP Connection(246)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
